@@ -5,3 +5,37 @@ body {
   -o-background-size: cover;
   background-size: cover;
 }
+
+h1 {
+    font: oblique bold 250% cursive;
+    color: rgb(155, 49, 160);
+    text-align: center;
+    margin-top: 21%;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    
+  }
+
+button {
+    border-radius: 15%;
+    font:oblique bold 150% cursive;
+    font-size: 20px;
+    line-height: 50px;
+    text-align: center;
+    width: 100px;
+    height: 50px; 
+    margin-left: 2%;
+    
+}
+
+button.si {
+    background-color:rgb(221, 39, 136);
+    color: white;
+}
+
+button.no {
+    color: rgb(221, 39, 136);
+}
