@@ -49,9 +49,17 @@ h1.texto{
     margin-top: 10%;
 }
 
-img{
+img.imagen{
     width: 800px;
     height: 800px;
     display: block;
     text-align: center;
+}
+
+img.gif{
+    position: absolute;
+    margin-right: 40%;
+    width: 200px;
+    height: 200px;
+    transform: rotate(-20deg);
 }
