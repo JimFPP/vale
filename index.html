@@ -42,9 +42,13 @@
 
             var SHeight = Sbutton.offsetHeight;
             var SWidth = Sbutton.offsetWidth;
+            
+            var Stext = window.getComputedStyle(Sbutton, null).getPropertyValue('font-size');
+            var Stext_new = parseFloat(Stext) + 5;
 
             Sbutton.style.width = (SWidth + 12) + "px";
             Sbutton.style.height = (SHeight + 12) + "px";
+            Sbutton.style.fontSize = Stext_new + "px";
 
         }
     </script>
