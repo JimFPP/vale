@@ -45,3 +45,13 @@ button.no {
     color: rgb(221, 39, 136);
 }
 
+h1.texto{
+    margin-top: 10%;
+}
+
+img{
+    width: 800px;
+    height: 800px;
+    display: block;
+    text-align: center;
+}
