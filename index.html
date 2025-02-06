@@ -11,7 +11,7 @@
     <h1>Señorita Valeria, me haria el honor de ser mi San Valentin?</h1>
 
     <div>
-    <button class="si">SI <i class="em em-hearts" aria-role="presentation" aria-label="BLACK HEART SUIT"></i>
+    <button class="si" id="si" onclick="redirect()">SI <i class="em em-hearts" aria-role="presentation" aria-label="BLACK HEART SUIT"></i>
     </button>
     
     <button class="no" onclick="moveButton()">No  <i class="em em-broken_heart" aria-role="presentation" aria-label="BROKEN HEART"></i></button>
@@ -19,16 +19,39 @@
 
     <script>
         function moveButton() {
-            var button = document.querySelector(".no");
-            var maxWidth = window.innerWidth - button.offsetWidth;
-            var maxHeight = window.innerHeight - button.offsetHeight;
+            var Nbutton = document.querySelector(".no");
+           
+
+            var maxWidth = window.innerWidth - Nbutton.offsetWidth;
+            var maxHeight = window.innerHeight - Nbutton.offsetHeight;
     
             var randomX = Math.floor(Math.random() * maxWidth);
             var randomY = Math.floor(Math.random() * maxHeight);
     
-            button.style.position = 'absolute';
-            button.style.left = randomX + 'px';
-            button.style.top = randomY + 'px';
+            Nbutton.style.position = 'absolute';
+            Nbutton.style.left = randomX + 'px';
+            Nbutton.style.top = randomY + 'px';
+
+            size();
+        }
+    </script>
+
+    <script>
+        function size(){
+            var Sbutton = document.getElementById("si");
+
+            var SHeight = Sbutton.offsetHeight;
+            var SWidth = Sbutton.offsetWidth;
+
+            Sbutton.style.width = (SWidth + 12) + "px";
+            Sbutton.style.height = (SHeight + 12) + "px";
+
+        }
+    </script>
+
+    <script>
+        function redirect(){
+            window.location.href = "acepto.html";
         }
     </script>
 </body>

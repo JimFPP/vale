@@ -45,7 +45,3 @@ button.no {
     color: rgb(221, 39, 136);
 }
 
-button.no.animate{
-    background-color: black;
-    width: +100%;
-}
