@@ -8,16 +8,22 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Señorita Valeria, me haria el honor de ser mi San Valentin?</h1>
+    <h1>Señorita, me harias el honor de ser mi San Valentin? </h1>
+
+    <h2 id="mensaje">Hola</h2>
 
     <div>
     <button class="si" id="si" onclick="redirect()">SI <i class="em em-hearts" aria-role="presentation" aria-label="BLACK HEART SUIT"></i>
     </button>
     
-    <button class="no" onclick="moveButton()">No  <i class="em em-broken_heart" aria-role="presentation" aria-label="BROKEN HEART"></i></button>
+    <button class="no" id="no" onclick="moveButton()">No  <i class="em em-broken_heart" aria-role="presentation" aria-label="BROKEN HEART"></i></button>
     </div>
 
+
+    
     <script>
+        var indice = 0;
+
         function moveButton() {
             var Nbutton = document.querySelector(".no");
            
@@ -32,6 +38,15 @@
             Nbutton.style.left = randomX + 'px';
             Nbutton.style.top = randomY + 'px';
 
+            const Lista = ["Segura?", "Segura segura???","Tienes otra opurtunidad", "Que sad" , "Y si te regalo un chocolate??","Un Bubble Tea??", "Segura segura segurisima???", "Ultima oportnidad!!!", "Bueno.. Otra mas"]
+            
+
+            document.getElementById("mensaje").innerText = Lista[indice];
+            indice = indice + 1;
+
+            if(indice > 8){
+                disableButton();
+            }
             size();
         }
     </script>
@@ -46,17 +61,32 @@
             var Stext = window.getComputedStyle(Sbutton, null).getPropertyValue('font-size');
             var Stext_new = parseFloat(Stext) + 5;
 
-            Sbutton.style.width = (SWidth + 12) + "px";
-            Sbutton.style.height = (SHeight + 12) + "px";
+            Sbutton.style.width = (SWidth + 50) + "px";
+            Sbutton.style.height = (SHeight + 50) + "px";
             Sbutton.style.fontSize = Stext_new + "px";
+            
+                    
 
         }
     </script>
+
+<script>
+    function disableButton() {
+        document.getElementById('no').disabled = true;
+    }
+</script>
+
+    </script>
+
 
     <script>
         function redirect(){
             window.location.href = "acepto.html";
         }
     </script>
+
+
+
+
 </body>
 </html> 
