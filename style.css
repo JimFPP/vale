@@ -69,8 +69,9 @@ img.imagen{
 img.gif{
     position: absolute;
     top: 300px;
-    left: 500px;
+    left: 50px;
     width: 200px;
     height: 200px;
     transform: rotate(-20deg);
+    display: block;
 } 
