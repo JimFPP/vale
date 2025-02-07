@@ -21,9 +21,17 @@ h3 {
 }
 
 div {
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    
+    height: 100px;
+    width: 500px; */
+    position: absolute;
+    width: 800px;
+    height: 800px;
+    z-index: 15;
+    top: 35%;
+    left: 45%;
+    margin: -100px 0 0 -350px;
   }
 
 button {
@@ -68,8 +76,8 @@ img.imagen{
 
 img.gif{
     position: absolute;
-    top: 300px;
-    left: 50px;
+  /*   top: 300px;
+    left: 50px; */
     width: 200px;
     height: 200px;
     transform: rotate(-20deg);
